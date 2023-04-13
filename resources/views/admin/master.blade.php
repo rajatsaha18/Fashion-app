@@ -11,9 +11,9 @@
 
     <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-            <a href="{{ route('home') }}" class="navbar-brand">Admin</a>
+            <a href="{{ route('dashboard') }}" class="navbar-brand">Admin</a>
             <ul class="navbar-nav">
-                <li><a href="" class="nav-link">Dashboard</a></li>
+                <li><a href="{{ route('dashboard') }}" class="nav-link">Dashboard</a></li>
                 <li class="dropdown">
                     <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</a>
                     <ul class="dropdown-menu">
