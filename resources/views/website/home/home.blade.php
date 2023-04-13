@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-            <a href="" class="navbar-brand">LOGO</a>
+            <a href="" class="navbar-brand">Fashion House</a>
             <ul class="navbar-nav">
                 <li><a href="" class="nav-link">Home</a></li>
                 <li><a href="" class="nav-link">About</a></li>
@@ -30,7 +30,9 @@
         </div>
     </nav>
 
-    <section class="py-5">
+    <!--About Section Start-->
+
+    <section class="py-5 bg-light">
         <div class="container">
             <div class="row">
                 <h1 class="text-center mb-3">About Us</h1>
@@ -58,6 +60,10 @@
             </div>
         </div>
     </section>
+
+    <!--About Section End-->
+
+    <!--Produts Section Start-->
 
     <section class="py-5">
         <div class="container">
@@ -105,6 +111,64 @@
                             <a href="" class="btn btn-success">Details</a>
                         </div>
                     </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Products Section End-->
+
+    <!--Contact Section Start-->
+
+    <section class="py-5 bg-secondary">
+        <div class="container">
+            <div class="row">
+                <h3 class="text-warning text-center">Contact Form</h3>
+                <div class="col-md-4 mx-auto">
+                    <div class="card bg-danger">
+                        <div class="card-body">
+                            <form action="" method="POST">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="">Full Name</label>
+                                    <input type="text" class="form-control" name="name" placeholder="Rajat Saha"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Email</label>
+                                    <input type="email" class="form-control" name="email" placeholder="rajat@gmail.com"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Mobile</label>
+                                    <input type="number" class="form-control" name="mobile" placeholder="01717440651"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Address</label>
+                                    <input type="text" class="form-control" name="address" placeholder="Dhanmondi, Dhaka"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Message</label>
+                                    <textarea class="form-control" name="message"></textarea>
+                                </div>
+                                <div class="form-group mt-2">
+                                    <label for=""></label>
+                                    <input type="submit" class="btn btn-success" value="Submit"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact Section End-->
+
+    <!--Booking Section Start-->
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
 
                 </div>
             </div>
