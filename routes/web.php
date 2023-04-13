@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\website\HomeController;
 use App\Http\Controllers\admin\DashboardController;
+use App\Http\Controllers\admin\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,4 +23,8 @@ Route::get('/booking', [HomeController::class, 'booking'])->name('booking');
 
 Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
     Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
+
+    Route::get('/add-category', [CategoryController::class,'index'])->name('add.category');
+    Route::get('/manage-category', [CategoryController::class,'manage'])->name('manage.category');
 });
+

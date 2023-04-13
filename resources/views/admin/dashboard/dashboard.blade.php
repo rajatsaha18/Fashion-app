@@ -1,45 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css') }}">
-</head>
-<body>
+@extends('admin.master')
 
-    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
-        <div class="container">
-            <a href="{{ route('home') }}" class="navbar-brand">Admin</a>
-            <ul class="navbar-nav">
-                <li><a href="" class="nav-link">Dashboard</a></li>
-                <li class="dropdown">
-                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="" class="dropdown-item">Add Category</a></li>
-                        <li><a href="" class="dropdown-item">Manage category</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Product</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="" class="dropdown-item">Add Product</a></li>
-                        <li><a href="" class="dropdown-item">Manage Product</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Contact</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="" class="dropdown-item">Manage Contact</a></li>
-                    </ul>
-                </li>
-                <li><a href="" class="nav-link">Logout</a></li>
-            </ul>
+@section('title')
+Admin | Home
+@endsection
+
+@section('body')
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-body bg-danger py-5">
+                    <h1 class="text-center">This is Dashboard Home Page</h1>
+                </div>
+            </div>
         </div>
-    </nav>
-    <script src="{{ asset('assets/js/jquery-3.6.4.js') }}"></script>
-    <script src="{{ asset('assets/js/bootstrap.bundle.js') }}"></script>
-
-</body>
-</html>
+    </div>
+</section>
+@endsection
